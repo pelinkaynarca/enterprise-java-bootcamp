@@ -24,5 +24,26 @@ public class Main {
         System.out.println(a+b);
 
         System.out.println("Sonuç:"+toplam);
+
+        String productName = "Elbise";
+        double price = 3100;
+        int adet = 3;
+
+        if (price > 3000) {
+            double discountRate = 0.20;
+            double discountAmount = price*discountRate;
+            double reducedPrice = price - discountAmount;
+
+            System.out.println("İndirimsiz Fiyat: " + price);
+            System.out.println("İndirimli fiyat: " + reducedPrice);
+            System.out.println("İndirim Miktarı: " + discountAmount);
+            System.out.println("İndirim Oranı: " + discountRate);
+        }
+
+        if(price >= 1500 && price <= 3000) {
+            double discountRate2 = 0.10;
+            double reducedPrice2 = price*discountRate2;
+            System.out.println("İndirimli Fiyat: " + reducedPrice2);
+        }
     }
 }

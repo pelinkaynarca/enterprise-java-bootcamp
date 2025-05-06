@@ -125,10 +125,22 @@ public class Main {
 //        User user2 = new User("User2","Soyad","user2@gmail.com","12345");
 //        System.out.println(user2);
 
-        UserRecord userRecord = new UserRecord("Pelin","Kaynarca","kdfjdf@gmail.com","123456");
-        UserRecord userRecord1 = new UserRecord("Pelin","Kaynarca","kdfjdf@gmail.com","123456");
-        System.out.println(userRecord.equals(userRecord1));
-        System.out.println(userRecord == userRecord1); // referans karşılaştırıyor
+//        UserRecord userRecord = new UserRecord("Pelin","Kaynarca","kdfjdf@gmail.com","123456");
+//        UserRecord userRecord1 = new UserRecord("Pelin","Kaynarca","kdfjdf@gmail.com","123456");
+//        System.out.println(userRecord.equals(userRecord1));
+//        System.out.println(userRecord == userRecord1); // referans karşılaştırıyor
+
+        // encapsulation
+        Product product = new Product();
+        product.setName("Samsung Galaxy");
+        product.setPrice(25200);
+        product.setStock(250);
+
+        System.out.println(product.getName());
+        System.out.println(product.getPrice());
+        System.out.println(product.getStock());
+
+
     }
 
 }
